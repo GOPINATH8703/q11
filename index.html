@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Image Gallery</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Media Query: 4 columns on wider screens */
+    @media (min-width: 768px) {
+      .gallery {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>IMAGES</h1>
+
+  <div class="gallery">
+    <img src="1253511.png" alt="Image 1">
+    <img src="1253511.png" alt="Image 2">
+    <img src="1253511.png" alt="Image 3">
+    <img src="1253511.png" alt="Image 4">
+    <img src="1253511.png" alt="Image 5">
+    <img src="1253511.png" alt="Image 6">
+    <img src="1253511.png" alt="Image 7">
+    <img src="1253511.png" alt="Image 8">
+  </div>
+
+</body>
+</html>
